@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Julia Tojko Boniecka</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="gallery.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- nav -->
+    <div class="navTOP">
+        <div class="navBar bar_btn" id="myNavBar">
+            <a class="bar_item" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <a href="#home" class="bar_item bar_btn">HOME</a>
+        <a href="#about" class="bar_item bar_btn"><i class="fa fa-user"></i>O mnie</a>
+        <a href="#porfolio" class="bar_item bar_btn"><i class="fa fa-th"></i>Portfolio</a>
+        <a href="#contact" class="bar_item bar_btn"><i class="fa fa-envelope"></i>Kontakt</a>
+    </div>
+
+    <!-- nav mobile -->
+    <div id="navMob" class="nav-mob-bar">
+        <a href="#about" class="bar_item bar_btn" onclick="toggleFunction()">O mnie</a>
+        <a href="#about" class="bar_item bar_btn" onclick="toggleFunction()">Portfolio</a>
+        <a href="#about" class="bar_item bar_btn" onclick="toggleFunction()">Kontakt</a>
+    </div>
+
+    <!-- Paralax 1 -->
+    <div class="bgimg-1" id="home">
+        <div class="dip-middle" style="white-space: nowrap;">
+            <span class="center"> Tojko </span> </div>
+    </div>
+
+    <!-- O mnie -->
+
+    <div class="wd-content wd-containter wd-padding-64" id="about">
+        <h3 class="wd-center">O mnie</h3>
+        <p class="wd-center">
+            <em>
+            Kocham rysować ! 
+            </em>
+        </p>
+        <div class="wd-row">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iste culpa necessitatibus eum assumenda aspernatur itaque ratione delectus atque, quis repellat numquam non quod ea facere earum eius odit. Sint? Incidunt quis iusto officiis modi provident
+                accusamus illo vero sapiente, natus fuga distinctio fugit inventore magnam pariatur laudantium ex repellat porro suscipit ab totam dolor! Expedita earum tenetur odit libero. Voluptatem ipsa enim, illo eaque quia iusto ut nemo libero vitae
+                consequuntur. Ad mollitia, a fugit nesciunt doloremque soluta at debitis voluptatum officia voluptates amet molestias facilis praesentium aliquid! Optio. Dolor hic quibusdam vero vitae minima numquam optio voluptatibus eum magnam suscipit
+                qui officiis ea sed, asperiores, impedit sint magni perspiciatis neque ipsam facilis. Amet repudiandae dicta possimus id ad?
+            </p>
+        </div>
+
+        <div class="wd-row">
+            <p><b>Julia "Tojko" Boniecka</b></p>
+            <img src="assets/avatar.png">
+        </div>
+
+
+
+
+    </div>
+
+    <!-- Paralax 2 -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="wd-content wd-containter wd-padding-64" id="portfolio">
+        <h3>Moje Prace</h3>
+        <p><em>
+            Poniżej znajdują się moje ostatnie prace, <br> Kliknij aby powiększyć
+        </em> </p>
+    </div>
+    <!-- galeria -->
+    <div class="wd-resp">
+        <div class="wd-gallery">
+            <img id="myIMG" src="gallery/1.jpg" class="wd-gal-hover" onclick="onClick(this)" alt="1" width="400" height="400">
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <!-- close btn -->
+        <span class="close"> &times;</span>
+        <!-- content -->
+        <img class="modal-content" id="img01">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="clearfix"></div>
+
+    <!-- Paralax 3 -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <p>
+        Wrocław, Polska<br> Tel: 111222333<br> email: aaa@bbb.ccc
+    </p>
+
+    <!-- footer -->
+    <a href="#home">Na górę</a>
+    <p> FB IG </p>
+
+</body>
+
+</html>
