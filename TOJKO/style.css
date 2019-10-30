@@ -2,10 +2,10 @@
 
 body,
 html {
-    color: #777;
+    /* color: #777; */
     height: 100%;
     line-height: 1.8;
-    background-color: aqua;
+    background-color: rgb(243, 238, 212);
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -63,6 +63,22 @@ html {
         background-attachment: scroll;
         min-height: 400px;
     }
+}
+
+
+/* text centred */
+
+.wd-center {
+    text-align: center;
+    padding: 10px;
+    text-decoration-color: rgb(151, 110, 110);
+}
+
+.wd-center-small {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1;
+    text-decoration-style: dashed;
 }
 
 
@@ -135,4 +151,52 @@ html {
     display: block;
     width: 80%;
     max-width: 700px;
+}
+
+
+/* capition of modal image (image text) */
+
+
+/* animatio - zoom */
+
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+/* close button */
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* imagwe for small screen */
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        widows: 100%;
+    }
 }

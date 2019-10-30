@@ -8,7 +8,11 @@
     <title>Portfolio Julia Tojko Boniecka</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="gallery.js"></script>
+    <script>
+        type = "text/javascript"
+        scr = "navBar.js"
+    </script>
+
 
 </head>
 
@@ -24,20 +28,20 @@
         </div>
         <a href="#home" class="bar_item bar_btn">HOME</a>
         <a href="#about" class="bar_item bar_btn"><i class="fa fa-user"></i>O mnie</a>
-        <a href="#porfolio" class="bar_item bar_btn"><i class="fa fa-th"></i>Portfolio</a>
+        <a href="#portfolio" class="bar_item bar_btn"><i class="fa fa-th"></i>Portfolio</a>
         <a href="#contact" class="bar_item bar_btn"><i class="fa fa-envelope"></i>Kontakt</a>
     </div>
 
     <!-- nav mobile -->
-    <div id="navMob" class="nav-mob-bar">
+    <!-- <div id="navMob" class="nav-mob-bar">
         <a href="#about" class="bar_item bar_btn" onclick="toggleFunction()">O mnie</a>
         <a href="#about" class="bar_item bar_btn" onclick="toggleFunction()">Portfolio</a>
         <a href="#about" class="bar_item bar_btn" onclick="toggleFunction()">Kontakt</a>
-    </div>
+    </div> -->
 
     <!-- Paralax 1 -->
     <div class="bgimg-1" id="home">
-        <div class="dip-middle" style="white-space: nowrap;">
+        <div class="dip-middle" style="white-space: nowrap;" id="home">
             <span class="center"> Tojko </span> </div>
     </div>
 
@@ -77,36 +81,27 @@
     </div>
 
     <!-- Portfolio -->
-    <div class="wd-content wd-containter wd-padding-64" id="portfolio">
+    <div class="wd-center" id="portfolio">
         <h3>Moje Prace</h3>
-        <p><em>
+        <div class="wd-center-small">
+            <p><em>
             Poniżej znajdują się moje ostatnie prace, <br> Kliknij aby powiększyć
         </em> </p>
+        </div>
     </div>
     <!-- galeria -->
     <div class="wd-resp">
         <div class="wd-gallery">
-            <img id="myIMG" src="gallery/1.jpg" class="wd-gal-hover" onclick="onClick(this)" alt="1" width="400" height="400">
+            <img id="myIMG" src="gallery/1.jpg" class="wd-gal-hover" alt="1" width="400" height="400">
         </div>
     </div>
 
+    <!-- The Modal -->
     <div id="myModal" class="modal">
-        <!-- close btn -->
-        <span class="close"> &times;</span>
-        <!-- content -->
+        <span class="close">&times;</span>
         <img class="modal-content" id="img01">
+        <div id="caption"></div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
 
     <div class="clearfix"></div>
 
@@ -118,14 +113,17 @@
     </div>
 
     <!-- contact -->
-    <p>
-        Wrocław, Polska<br> Tel: 111222333<br> email: aaa@bbb.ccc
-    </p>
+    <div class="wd-contact" id="contact">
+        <p>
+            Wrocław, Polska<br> Tel: 111222333<br> email: aaa@bbb.ccc
+        </p>
+    </div>
 
     <!-- footer -->
     <a href="#home">Na górę</a>
     <p> FB IG </p>
 
+    <script type="text/javascript" src="gallery.js"></script>
 </body>
 
 </html>
